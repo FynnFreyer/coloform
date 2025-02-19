@@ -79,14 +79,14 @@ logs:
 
 .PHONY: format lint test type-check chores
 format: logs  ## Do code formatting with isort and autopep8.
-	python3 -m isort colorado/  | tee logs/isort.log
-	python3 -m autopep8 -v colorado/  | tee logs/autopep8.log
+	python3 -m isort coloform/  | tee logs/isort.log
+	python3 -m autopep8 -v coloform/  | tee logs/autopep8.log
 
 lint: logs  ## Lint the project with ruff.
-	python3 -m ruff check --fix colorado/  | tee logs/ruff.log
+	python3 -m ruff check --fix coloform/  | tee logs/ruff.log
 
 type-check: logs  ## Run static type checking with mypy.
-	python3 -m mypy colorado/  | tee logs/mypy.log
+	python3 -m mypy coloform/  | tee logs/mypy.log
 
 chores: format lint type-check  ## Format, lint, test and type check the repository.
 	@echo Looks good to me!

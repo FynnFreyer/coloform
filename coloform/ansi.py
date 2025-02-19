@@ -5,7 +5,7 @@ Cf. https://pypi.org/project/colorama/
 import colorama
 from colorama.ansi import CSI, AnsiCodes
 
-from colorado.color import RGBColor
+from coloform.color import RGBColor
 
 
 # redefine code_to_chars function to enable handling complex ansi codes

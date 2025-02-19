@@ -1,4 +1,4 @@
-from colorado.ansi import Back, Fore, Style
+from coloform.ansi import Back, Fore, Style
 
 msg = (
     f"Look ma: {Style.UNDERLINE}more styles{Style.RESET_UNDERLINE}, "

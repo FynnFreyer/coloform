@@ -1,5 +1,5 @@
 [project]
-name = 'colorado'
+name = 'coloform'
 readme = 'README.md'
 requires-python = '>=3.8'
 classifiers = [
@@ -23,18 +23,18 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/FynnFreyer/colorado"
-Issues = "https://github.com/FynnFreyer/colorado/issues"
+Repository = "https://github.com/FynnFreyer/coloform"
+Issues = "https://github.com/FynnFreyer/coloform/issues"
 
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch]
-description = { path = "colorado/__about__.py" }
-version = { path = "colorado/__about__.py" }
-authors = { path = "colorado/__about__.py" }
-maintainers = { path = "colorado/__about__.py" }
+description = { path = "coloform/__about__.py" }
+version = { path = "coloform/__about__.py" }
+authors = { path = "coloform/__about__.py" }
+maintainers = { path = "coloform/__about__.py" }
 
 # Formatting options
 [tool.autopep8]
@@ -43,13 +43,13 @@ in-place = true
 recursive = true
 
 [tool.isort]
-src_paths = ['colorado']
+src_paths = ['coloform']
 line_length = 120
 
 # Linting options
 [tool.ruff]
 line-length = 120
-src = ['colorado']
+src = ['coloform']
 
 show-fixes = true
 

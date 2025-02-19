@@ -1,4 +1,4 @@
-# Colorado
+# Coloform
 
 Similar to [`colorama` by Jonathan Hartley](https://github.com/tartley/colorama/) this project aims to provide a simple interface for coloring terminal output, contrary to `colorama` it doesn't try to provide support for Windows.
 If you need Windows support, or run this on something other than a mainstream terminal emulator, this is probably not for you.
@@ -11,7 +11,7 @@ These are prefixed with `Rich`, to differentiate them from the `colorama` object
 Coloramas `Cursor` is unchanged and available for convenience.
 
 ```python
-from colorado import Fore, Back, Style
+from coloform import Fore, Back, Style
 
 print(f'Look ma, {Style.UNDERLINE}more styles{Style.RESET_UNDERLINE}, than we ever {Style.STRIKE_OUT}wanted{Style.RESET_STRIKE_OUT} {Style.BLINK}needed{Style.RESET_BLINK}!')
 print(f'Also, {Fore.HEX_1234FF}hex and rgb colors for fore-{Fore.RESET} and {Back.RGB_255_20_255}background{Back.RESET}')
