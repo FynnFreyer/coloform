@@ -13,9 +13,17 @@ Coloramas `Cursor` is unchanged and available for convenience.
 ```python
 from coloform import Fore, Back, Style
 
-print(f'Look ma, {Style.UNDERLINE}more styles{Style.RESET_UNDERLINE}, than we ever {Style.STRIKE_OUT}wanted{Style.RESET_STRIKE_OUT} {Style.BLINK}needed{Style.RESET_BLINK}!')
-print(f'Also, {Fore.HEX_1234FF}hex and rgb colors for fore-{Fore.RESET} and {Back.RGB_255_20_255}background{Back.RESET}')
-print(f'Common {Fore.RED}aliases {Back.GREEN}just {Fore.RESET}work!{Style.RESET_ALL}')
+msg = (
+    f"Look ma: {Style.UNDERLINED}more{Style.RESET_UNDERLINED} {Style.ITALICS}styles{Style.RESET_ITALICS}, "
+    f"than we {Style.BOLD}ever{Style.RESET_ALL} "
+    f"{Style.STRIKE_OUT}wanted{Style.RESET_STRIKE_OUT} "
+    f"{Style.BLINK}needed{Style.RESET_BLINK}!\n"
+    f"Also, {Fore.HEX_1234FF}HEX{Fore.RESET} and {Fore.RGB_0_255_255}RGB{Fore.RESET} "
+    f"colors for {Style.DOUBLE_UNDERLINED}fore- and {Back.RGB_255_0_255}background{Style.RESET_ALL}.\n"
+    f"Common {Fore.RED}aliases {Back.GREEN}just{Fore.RESET} work!{Style.RESET_ALL}"
+)
+
+print(msg)
 ```
 
 Features loads of useless aliases (`Style.UNDERLINE == Style.UNDERLINED` etc.).
