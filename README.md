@@ -26,6 +26,8 @@ msg = (
 print(msg)
 ```
 
+![Demo](docs/img/coloform_demo.gif)
+
 Features loads of useless aliases (`Style.UNDERLINE == Style.UNDERLINED` etc.).
 
 ## Why
