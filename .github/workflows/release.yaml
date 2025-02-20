@@ -31,7 +31,7 @@ jobs:
   github-release:
     name: Sign with Sigstore and upload to GitHub Release
     needs:
-      - publish-to-pypi
+      - pypi-publish
     runs-on: ubuntu-latest
 
     permissions:
